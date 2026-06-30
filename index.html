@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duke's Movie - Be a Star!</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: linear-gradient(to bottom, #0a0a2e, #1a1a4e); color: white; text-align: center; padding: 20px; }
+        h1 { color: #ffd700; font-size: 3em; }
+        .hero { font-size: 1.5em; margin: 20px; }
+        form { max-width: 500px; margin: 30px auto; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; }
+        input, button { padding: 10px; margin: 10px; width: 80%; border-radius: 8px; }
+        button { background: #ff4500; color: white; font-weight: bold; cursor: pointer; }
+        button:hover { background: #ff6500; }
+        .movie-poster { max-width: 300px; border: 5px solid #ffd700; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🎥 Duke's Epic Movie 🎬</h1>
+    <p class="hero">Hi! I'm Duke and I'm making an awesome movie. Want to be in it? Sign up below!</p>
+    
+    <img src="https://via.placeholder.com/300x400?text=Duke%27s+Movie+Poster" alt="Movie Poster" class="movie-poster">
+    
+    <form id="signup-form">
+        <input type="text" id="name" placeholder="Your Name" required><br>
+        <input type="email" id="email" placeholder="Your Email" required><br>
+        <input type="text" id="role" placeholder="What role do you want? (Actor, Extra, Helper)" required><br>
+        <button type="submit">Sign Me Up! 🚀</button>
+    </form>
+    
+    <p id="message"></p>
+    
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            document.getElementById('message').innerHTML = `🎉 Thank you, ${name}! Duke will contact you soon about being in the movie!`;
+            this.reset();
+        });
+    </script>
+</body>
+</html>
