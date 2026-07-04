@@ -33,11 +33,21 @@
             line-height: 1.6;
         }
         .movie-poster {
-            max-width: 280px;
+            max-width: 90%;
+            max-height: 500px;
             border: 8px solid #ffd700;
             border-radius: 15px;
             box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
             margin: 20px auto;
+            display: block;
+        }
+        .friends-poster {
+            max-width: 90%;
+            max-height: 450px;
+            border: 8px solid #00ffff;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+            margin: 30px auto;
             display: block;
         }
         .signup-button {
@@ -76,6 +86,10 @@
             max-width: 500px;
             margin: 30px auto;
         }
+        .section-title {
+            color: #00ffff;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
@@ -88,7 +102,8 @@
         <strong>Want to be in my movie?</strong>
     </p>
     
-    <img src="https://via.placeholder.com/280x380?text=Duke%27s+Movie+Poster" alt="Duke's Movie Poster" class="movie-poster">
+    <!-- Main poster: Duke fighting the zombie -->
+    <img src="dukefightingzombie.jpg" alt="Duke fighting a zombie - Movie Poster" class="movie-poster">
     
     <!-- BIG SIGNUP BUTTON -->
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQuyG9L9Qnh7Y0ZIwlrylqHVp7ZtIUEKCd1ni8RyLdxtar4g/viewform?usp=sharing" target="_blank" class="signup-button">
@@ -99,6 +114,10 @@
         Just fill out the quick form and Duke will contact you soon!<br>
         (It only takes 1 minute)
     </p>
+    
+    <!-- Friends poster -->
+    <h2 class="section-title">Duke's Awesome Friends Are In The Movie Too!</h2>
+    <img src="moveposter.jpg" alt="Duke's Epic Movie - Animal Friends Poster" class="friends-poster">
     
     <div class="fun-fact">
         <strong>Fun fact:</strong> Duke is 5 years old and this is his first movie! 🎉
