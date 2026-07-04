@@ -33,21 +33,11 @@
             line-height: 1.6;
         }
         .movie-poster {
-            max-width: 90%;
-            max-height: 500px;
+            max-width: 320px;
             border: 8px solid #ffd700;
             border-radius: 15px;
             box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
             margin: 20px auto;
-            display: block;
-        }
-        .friends-poster {
-            max-width: 90%;
-            max-height: 450px;
-            border: 8px solid #00ffff;
-            border-radius: 15px;
-            box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
-            margin: 30px auto;
             display: block;
         }
         .signup-button {
@@ -56,39 +46,33 @@
             color: white;
             font-size: 1.4em;
             font-weight: bold;
-            padding: 20px 50px;
+            padding: 22px 55px;
             border: 6px solid #ffd700;
             border-radius: 20px;
             text-decoration: none;
             margin: 30px 0;
             box-shadow: 0 10px 0 #b33000;
             transition: all 0.2s;
+            font-family: 'Press Start 2P', system-ui, Arial, sans-serif;
         }
         .signup-button:hover {
             background: #ff6500;
-            transform: translateY(-5px);
-            box-shadow: 0 15px 0 #b33000;
-        }
-        .signup-button:active {
-            transform: translateY(4px);
-            box-shadow: 0 6px 0 #b33000;
+            transform: translateY(-6px);
+            box-shadow: 0 16px 0 #b33000;
         }
         .note {
-            font-size: 0.9em;
-            color: #aaa;
-            max-width: 500px;
-            margin: 20px auto;
+            font-size: 0.95em;
+            color: #ccc;
+            max-width: 520px;
+            margin: 15px auto;
         }
         .fun-fact {
             background: rgba(255, 215, 0, 0.1);
-            padding: 15px;
+            padding: 18px;
             border-radius: 15px;
-            max-width: 500px;
+            max-width: 520px;
             margin: 30px auto;
-        }
-        .section-title {
-            color: #00ffff;
-            margin-top: 40px;
+            font-size: 0.95em;
         }
     </style>
 </head>
@@ -102,29 +86,26 @@
         <strong>Want to be in my movie?</strong>
     </p>
     
-    <!-- Main poster: Duke fighting the zombie -->
-    <img src="dukefightingzombie.jpg" alt="Duke fighting a zombie - Movie Poster" class="movie-poster">
+    <!-- Cool placeholder poster - will be replaced when custom images are uploaded -->
+    <img src="https://via.placeholder.com/320x420/1a1a4e/ffd700?text=Duke%27s+Epic+Movie+Poster" alt="Duke's Epic Movie Poster" class="movie-poster">
     
-    <!-- BIG SIGNUP BUTTON -->
+    <!-- BIG SIGNUP BUTTON with correct Google Form -->
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQuyG9L9Qnh7Y0ZIwlrylqHVp7ZtIUEKCd1ni8RyLdxtar4g/viewform?usp=sharing" target="_blank" class="signup-button">
         🎬 SIGN UP TO BE IN MY MOVIE! 🚀
     </a>
     
     <p class="note">
-        Just fill out the quick form and Duke will contact you soon!<br>
-        (It only takes 1 minute)
+        Click the button above to fill out the quick form.<br>
+        Duke will personally contact you soon!
     </p>
     
-    <!-- Friends poster -->
-    <h2 class="section-title">Duke's Awesome Friends Are In The Movie Too!</h2>
-    <img src="moveposter.jpg" alt="Duke's Epic Movie - Animal Friends Poster" class="friends-poster">
-    
     <div class="fun-fact">
-        <strong>Fun fact:</strong> Duke is 5 years old and this is his first movie! 🎉
+        <strong>Fun fact:</strong> Duke is 5 years old and this is his first movie! 🎉<br>
+        He can't wait to make an awesome film with all his new friends.
     </div>
     
-    <p style="margin-top: 40px; font-size: 0.85em; color: #888;">
-        Made with ❤️ for Duke
+    <p style="margin-top: 50px; font-size: 0.85em; color: #888;">
+        Made with ❤️ for Duke by Dad & Grok
     </p>
 </body>
 </html>
