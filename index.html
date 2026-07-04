@@ -5,38 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duke's Movie - Be a Star!</title>
     <style>
-        body { font-family: Arial, sans-serif; background: linear-gradient(to bottom, #0a0a2e, #1a1a4e); color: white; text-align: center; padding: 20px; }
-        h1 { color: #ffd700; font-size: 3em; }
-        .hero { font-size: 1.5em; margin: 20px; }
-        form { max-width: 500px; margin: 30px auto; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; }
-        input, button { padding: 10px; margin: 10px; width: 80%; border-radius: 8px; }
-        button { background: #ff4500; color: white; font-weight: bold; cursor: pointer; }
-        button:hover { background: #ff6500; }
-        .movie-poster { max-width: 300px; border: 5px solid #ffd700; border-radius: 10px; }
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        body {
+            font-family: 'Press Start 2P', system-ui, Arial, sans-serif;
+            background: linear-gradient(to bottom, #0a0a2e, #1a1a4e);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #ffd700;
+            font-size: 2.8em;
+            text-shadow: 4px 4px 0 #ff4500;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.3em;
+            color: #00ffff;
+            margin: 10px 0 30px;
+        }
+        .hero-text {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+        .movie-poster {
+            max-width: 280px;
+            border: 8px solid #ffd700;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+            margin: 20px auto;
+            display: block;
+        }
+        .signup-button {
+            display: inline-block;
+            background: #ff4500;
+            color: white;
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 20px 50px;
+            border: 6px solid #ffd700;
+            border-radius: 20px;
+            text-decoration: none;
+            margin: 30px 0;
+            box-shadow: 0 10px 0 #b33000;
+            transition: all 0.2s;
+        }
+        .signup-button:hover {
+            background: #ff6500;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 0 #b33000;
+        }
+        .signup-button:active {
+            transform: translateY(4px);
+            box-shadow: 0 6px 0 #b33000;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #aaa;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .fun-fact {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            max-width: 500px;
+            margin: 30px auto;
+        }
     </style>
 </head>
 <body>
-    <h1>🎥 Duke's Epic Movie 🎬</h1>
-    <p class="hero">Hi! I'm Duke and I'm making an awesome movie. Want to be in it? Sign up below!</p>
+    <h1>🎥 DUKE'S EPIC MOVIE 🎬</h1>
+    <p class="subtitle">Starring YOU?</p>
     
-    <img src="https://via.placeholder.com/300x400?text=Duke%27s+Movie+Poster" alt="Movie Poster" class="movie-poster">
+    <p class="hero-text">
+        Hi everyone! I'm Duke and I'm making a super awesome movie.<br>
+        I need cool people to be actors, extras, and helpers!<br>
+        <strong>Want to be in my movie?</strong>
+    </p>
     
-    <form id="signup-form">
-        <input type="text" id="name" placeholder="Your Name" required><br>
-        <input type="email" id="email" placeholder="Your Email" required><br>
-        <input type="text" id="role" placeholder="What role do you want? (Actor, Extra, Helper)" required><br>
-        <button type="submit">Sign Me Up! 🚀</button>
-    </form>
+    <img src="https://via.placeholder.com/280x380?text=Duke%27s+Movie+Poster" alt="Duke's Movie Poster" class="movie-poster">
     
-    <p id="message"></p>
+    <!-- BIG SIGNUP BUTTON - Replace the href with your real Google Form link -->
+    <a href="https://forms.gle/YOUR_FORM_LINK_HERE" target="_blank" class="signup-button">
+        🎬 SIGN UP TO BE IN MY MOVIE! 🚀
+    </a>
     
-    <script>
-        document.getElementById('signup-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            document.getElementById('message').innerHTML = `🎉 Thank you, ${name}! Duke will contact you soon about being in the movie!`;
-            this.reset();
-        });
-    </script>
+    <p class="note">
+        Just fill out the quick form and Duke will contact you soon!<br>
+        (It only takes 1 minute)
+    </p>
+    
+    <div class="fun-fact">
+        <strong>Fun fact:</strong> Duke is 5 years old and this is his first movie! 🎉
+    </div>
+    
+    <p style="margin-top: 40px; font-size: 0.85em; color: #888;">
+        Made with ❤️ for Duke
+    </p>
 </body>
 </html>
